@@ -10,11 +10,11 @@
 locale                   : "en-US"
 site_theme               : "default"
 title                    : "Dr Olivier Legault"
-title_separator          : "Pédiatre du développement"
+title_separator          : "-"
 name                     : &name "Olivier Legault"
 description              : &description "Developmental Pediatrician"
 url                      : https://olivierrlegault.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/test" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "test/olivierrlegault.github.io"
 logo                     : "/images/logo.png"
 
@@ -144,8 +144,8 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : "Dr Olivier Legault"
   links: # An array of links to social media profiles
 
 
