@@ -163,10 +163,14 @@
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}
       {% if author.logo %}
-  <div style="margin-top: 10px; text-align: center;">
-    <img src="{{ author.logo | https://olivierrlegault.github.io/test/images/logo.png }}" alt="Site Logo" style="max-width: 15px; height: auto;">
-  </div>
-      {% endif %}
+  <li>
+    <img src="{{ author.logo }}" fetchpriority="high" />
+  </li>
+{% else %}
+  <li>
+    <img src="{{ author.logo | prepend: '/images/' | prepend: base_path }}" class="author__logo" fetchpriority="high" />
+  </li>
+{% endif %}
     </ul>
   </div>
 </div>
