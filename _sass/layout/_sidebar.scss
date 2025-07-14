@@ -119,41 +119,6 @@
   }
 }
 
-.author__columns {
-  display: flex;
-  gap: 30px; // Space between columns
-  align-items: flex-start; // Align items to top
-}
-
-.author__column {
-  &--logo {
-    flex: 0 0 auto; // Don't grow or shrink
-    width: 150px; // Fixed width for logo column
-  }
-  
-  &--text {
-    flex: 1; // Take remaining space
-  }
-}
-
-.author__logo {
-  max-width: 50%;
-  height: auto;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .author__columns {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .author__column--logo {
-    width: 100px; // Smaller logo on mobile
-    margin: 0 auto; // Center logo on mobile
-  }
-}
-
 .author__name {
   margin: 0;
 
