@@ -162,6 +162,11 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}
+      {% if author.logo %}
+      <div style="margin-top: 10px; text-align: center;">
+        <img src="{{ author.logo }}" alt="Site Logo" style="max-width: 150px; height: auto;">
+  </div>
+{% endif %}
     </ul>
   </div>
 </div>
