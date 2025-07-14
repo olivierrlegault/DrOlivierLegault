@@ -28,7 +28,7 @@ I actively contribute to knowledge dissemination through workshops, lectures, an
 - **Colloque de pédiatrie scolaire**, Université de Sherbrooke — _Sept 19, 2025_
 - **ECHO CHU Sainte-Justine** — _Sessions focused on neurodevelopmental mental health_
 
-Explore more on the [Teaching](/teaching/) page.
+Explore more on the [Teaching](test/teaching/) page.
 
 ---
 
