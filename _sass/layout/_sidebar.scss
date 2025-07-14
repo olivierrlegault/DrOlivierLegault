@@ -119,6 +119,20 @@
   }
 }
 
+.author__logo-container {
+  flex-shrink: 0;
+}
+
+.author__logo {
+  width: 80px; // Adjust size as needed
+  height: 80px; // Adjust size as needed
+  object-fit: contain; // Ensures logo fits properly
+}
+
+.author__text-content {
+  flex-grow: 1;
+}
+
 .author__name {
   margin: 0;
 
