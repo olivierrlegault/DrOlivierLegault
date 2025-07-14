@@ -162,14 +162,12 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}
-      {% if author.logo %}
-  <li>
-    <img src="{{ author.logo }}" fetchpriority="high" />
-  </li>
-{% else %}
-  <li>
-    <img src="{{ author.logo | prepend: '/images/' | prepend: base_path }}" class="author__logo" fetchpriority="high" />
-  </li>
+      {% if author.logo contains "://" %}
+      <li><img src="{{ author.logo }}" alt="{{ author.name }}" fetchpriority="high" /></li>
+      {% else %}<img src="{{ author.logo | prepend: '/images/' | prepend: base_path }}" class="author__logo"    fetchpriority="high" fetchpriority="high" />    {% endif %}
+  </div>
+
+      
 {% endif %}
     </ul>
   </div>
