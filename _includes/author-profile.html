@@ -14,14 +14,23 @@
     {% endif %}
   </div>
 
-  <div class="author__content">
-    <div class="author__logo-container">
-     <img src="{{ base_path | append: '/images/' | append: author.logo }}" alt="Your Logo" class="author__logo">
+<div class="author__content">
+  <div class="author__columns">
+    <!-- Column 1: Logo -->
+    <div class="author__column author__column--logo">
+      <div class="author__logo-container">
+        <img src="{{ base_path | append: '/images/' | append: author.logo }}" alt="Your Logo" class="author__logo">
+      </div>
     </div>
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    
+    <!-- Column 2: Text Content -->
+    <div class="author__column author__column--text">
+      <h3 class="author__name">{{ author.name }}</h3>
+      {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+      {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    </div>
   </div>
+</div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
