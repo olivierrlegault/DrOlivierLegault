@@ -16,7 +16,7 @@
 
   <div class="author__content">
     <div class="author__logo-container">
-     <img src="/images/logo.png" alt="Your Logo" class="author__logo">
+     <img src="{{ base_path | append: '/images/' | append: author.logo }}" alt="Your Logo" class="author__logo">
     </div>
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
