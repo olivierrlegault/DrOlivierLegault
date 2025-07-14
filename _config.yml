@@ -30,7 +30,7 @@ author:
   employer         : "Universite de Montreal"
   uri              : # URL
   email            : "none@example.org"
-  logo             : "/images/logo.png"
+  logo             : "logo.png"
 
   # Academic websites
   academia         : # URL
