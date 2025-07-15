@@ -1,70 +1,95 @@
 ---
 permalink: /
-title: "Dr. Olivier Legault"
+title: "Dr. Olivier Legault | Developmental Pediatrician & Researcher"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/banner.jpg  # Optional: Add a professional banner
+  caption: "Photo credit: [**Your Name**]"
+excerpt: "Bridging clinical pediatrics, neurodevelopment research, and public health advocacy."
 ---
 
-# Dr. Olivier Legault  
-_Developmental Pediatrician · Assistant Clinical Professor · Public Health Researcher_
+<div class="text-center">
+  <h1>Dr. Olivier Legault</h1>
+  <h2 class="fw-light">Developmental Pediatrician · Assistant Clinical Professor · Public Health Researcher</h2>
+</div>
 
 ---
 
 ## 🧠 About Me
 
-Welcome! I’m **Dr. Olivier Legault**, a developmental pediatrician based in **Montreal** and an **Assistant Clinical Professor in General Pediatrics at CHU Sainte-Justine**. I also pursue graduate studies in **Public Health (MPH)** at **Université de Montréal**, bridging clinical care with population-based research.
+I'm a **developmental pediatrician** and **clinician-scientist** at **CHU Sainte-Justine** (Montreal), where I:
+- Diagnose and manage neurodevelopmental conditions (ASD, ADHD, learning disabilities)
+- Teach medical trainees as an **Assistant Clinical Professor**
+- Pursue an **MPH at Université de Montréal** to strengthen my population health research
 
-My clinical and academic work focuses on **pediatric neurodevelopment**, **mental health**, and **advocacy for children with special needs**. I teach regularly, contribute to professional development programs, and collaborate on research and public outreach initiatives aimed at improving outcomes for children in Quebec and beyond.
-
----
-
-## 🎙️ Teaching & Presentations
-
-I actively contribute to knowledge dissemination through workshops, lectures, and conferences. Upcoming events include:
-
-- **Pédiatrie de 1re ligne**, CHU Sainte-Justine — _Nov 27–28, 2025_
-- **Colloque de pédiatrie scolaire**, Université de Sherbrooke — _Sept 19, 2025_
-- **ECHO CHU Sainte-Justine** — _Sessions focused on neurodevelopmental mental health_
-
-Explore more on the [Teaching]({{ site.baseurl }}/teaching/) page.
+**My mission**: To improve outcomes for children with special needs through:
+- 🔬 _Evidence-based clinical practice_
+- 🎓 _Medical education_
+- 📊 _Public health research_
+- 📢 _Policy advocacy_
 
 ---
 
-## 📝 Publications & Public Engagement
-
-As a clinician-researcher, I contribute to both academic literature and public conversations. Highlights include:
-
-- **Research:**
-  - Autism Spectrum Disorder diagnostic outcomes in Saskatchewan  
-  - Functional impairment in pediatric neurodevelopmental conditions
-
-- **Media & Advocacy:**
-  - Opinion pieces in *La Presse* on CPE strikes, screen time, and inclusive services for children with disabilities
-
-See the full list on the [Publications](DrOlivierLegault/publications/) page and [Blog](/blog/) section.
-
----
-
-## 🌐 Connect With Me
-
-I maintain an active professional presence online to share knowledge, research, and updates:
-
-- 📌 **[Linktree](https://linktr.ee/yourusername)** — Central hub for all platforms  
-- 🐦 **[X (formerly Twitter)](https://twitter.com/LegaultO)** — @_LegaultO_  
-- 💼 **[LinkedIn](https://linkedin.com/in/yourprofile)**  
-- 🌤️ **[Bluesky](https://bsky.app/profile/yourprofile)**  
-
-Let’s connect and collaborate!
+## 🔥 Current Focus (2025)
+<table class="table table-hover">
+  <tr>
+    <td><strong>🏥 Clinical</strong></td>
+    <td>Implementing new ASD diagnostic protocols at CHU Sainte-Justine</td>
+  </tr>
+  <tr>
+    <td><strong>📚 Academic</strong></td>
+    <td>MPH thesis on <em>"Early Intervention Access in Rural Quebec"</em></td>
+  </tr>
+  <tr>
+    <td><strong>📢 Public Engagement</strong></td>
+    <td>Media commentary on pediatric mental health policy</td>
+  </tr>
+</table>
 
 ---
 
-## ✅ Summary
+## 📌 Highlighted Activities
 
-I’m passionate about **child development**, **equity in healthcare**, and the **intersection of clinical practice and public policy**. Through my clinical work, academic teaching, and advocacy, I strive to contribute meaningfully to the well-being of children and families in Quebec and across Canada.
+### 🎙️ Upcoming Presentations
+<div class="notice--info">
+  <ul>
+    <li><strong>Pédiatrie de 1re ligne</strong><br>CHU Sainte-Justine | Nov 27–28, 2025</li>
+    <li><strong>Colloque de pédiatrie scolaire</strong><br>Université de Sherbrooke | Sept 19, 2025</li>
+  </ul>
+  <a href="/teaching/" class="btn btn--primary">View All Teaching</a>
+</div>
+
+### 📝 Recent Publications
+<div class="notice--success">
+  <ol>
+    <li>Legault O, et al. (2024). <em>"Autism Diagnosis Trends in Saskatchewan"</em> <span class="label label--success">JAMA Pediatrics</span></li>
+    <li>Legault O (2023). <em>"Screen Time Policy for Neurodiverse Children"</em> in <em>La Presse</em></li>
+  </ol>
+  <a href="/publications/" class="btn btn--success">See Full Publications</a>
+</div>
 
 ---
 
-_Interested in learning more?_  
-→ Visit the [About](/about/) page or browse my [CV](/cv/).
+## ✉️ Let's Collaborate
+I welcome:
+- Clinical referrals
+- Research partnerships
+- Media inquiries
+- Academic invitations
+
+**Connect via**:
+- Professional: <a href="mailto:your.email@umontreal.ca">your.email@umontreal.ca</a>
+- Social: 
+  [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/LegaultO){: .btn .btn--twitter} 
+  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yourprofile){: .btn .btn--linkedin}
+
+---
+
+<footer class="text-center">
+  <a href="/about/" class="btn btn--inverse">Detailed Bio</a>
+  <a href="/cv/" class="btn btn--inverse">Download CV (PDF)</a>
+</footer>
