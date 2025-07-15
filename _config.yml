@@ -8,6 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
+languages                : ["en", "fr"]
+default_lang             : "en"
 site_theme               : "default"
 title                    : "Dr Olivier Legault"
 title_separator          : "-"
@@ -194,6 +196,7 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+exclude_from_localization: ["assets", "images", "javascripts", "pdfs", "css"]
 
 # Conversion
 markdown: kramdown
