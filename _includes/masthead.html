@@ -1,5 +1,17 @@
 {% include base_path %}
 
+
+{% assign current_lang = 'en' %}
+{% if page.url contains '/fr/' %}
+  {% assign current_lang = 'fr' %}
+{% endif %}
+
+{% if current_lang == 'fr' %}
+  {% assign nav_links = site.data.navigation.main_fr %}
+{% else %}
+  {% assign nav_links = site.data.navigation.main_en %}
+{% endif %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
