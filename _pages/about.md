@@ -28,7 +28,7 @@ I actively contribute to knowledge dissemination through workshops, lectures, an
 - **Colloque de pédiatrie scolaire**, Université de Sherbrooke — _Sept 19, 2025_
 - **ECHO CHU Sainte-Justine** — _Sessions focused on neurodevelopmental mental health_
 
-Explore more on the [Teaching]({{ baseurl }}/teaching/) page.
+Explore more on the [Teaching]({{ site.baseurl }}/teaching/) page.
 
 ---
 
@@ -43,7 +43,7 @@ As a clinician-researcher, I contribute to both academic literature and public c
 - **Media & Advocacy:**
   - Opinion pieces in *La Presse* on CPE strikes, screen time, and inclusive services for children with disabilities
 
-See the full list on the [Publications](/publications/) page and [Blog](/blog/) section.
+See the full list on the [Publications](DrOlivierLegault/publications/) page and [Blog](/blog/) section.
 
 ---
 
