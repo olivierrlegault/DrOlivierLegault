@@ -11,7 +11,9 @@ locale                   : "en-US"
 languages                : ["en", "fr"]
 default_lang             : "en"
 site_theme               : "default"
-title                    : "Dr Olivier Legault"
+title:
+  en: "Dr Olivier Legault | Professional Page"
+  fr: "Dr Olivier Legault | Page Professionnelle"
 title_separator          : "-"
 name                     : &name "Olivier Legault"
 description              : &description "Developmental Pediatrician"
