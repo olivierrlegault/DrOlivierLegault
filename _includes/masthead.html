@@ -1,43 +1,29 @@
 {% include base_path %}
 
-{% comment %}Detect current language based on URL{% endcomment %}
-{% assign current_lang = 'en' %}
-{% if page.url contains '/fr/' %}
-  {% assign current_lang = 'fr' %}
-{% endif %}
-
-{% comment %}Load correct language navigation data{% endcomment %}
-{% assign nav_links = site.data["navigation_" | append: current_lang] %}
-
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
-          
-          {% for link in nav_links %}
-            {% assign domain = link.url contains 'http' ? '' : base_path %}
-            <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-            </li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-
-          <!-- Language toggle -->
-          <li class="masthead__menu-item persist">
-            {% assign fr_active = current_lang == 'fr' %}
-            {% assign en_active = current_lang == 'en' %}
-            <a href="{{ base_path }}/fr/" {% if fr_active %}class="active"{% endif %}>FR</a> |
-            <a href="{{ base_path }}/en/" {% if en_active %}class="active"{% endif %}>EN</a>
-          </li>
-          
+<div class="lang-switcher">
+  {% if site.lang == "en" %}
+    <a href="{{ site.baseurl }}/fr/" class="active">FR</a>
+  {% elsif site.lang == "fr" %}
+    <a href="{{ site.baseurl }}/en/" class="active">EN</a>
+  {% endif %}
+</div>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon">
-              <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i>
-            </a>
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
