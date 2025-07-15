@@ -1,16 +1,13 @@
 {% include base_path %}
 
-
+{% comment %}Detect current language based on URL{% endcomment %}
 {% assign current_lang = 'en' %}
 {% if page.url contains '/fr/' %}
   {% assign current_lang = 'fr' %}
 {% endif %}
 
-{% if current_lang == 'fr' %}
-  {% assign nav_links = site.data.navigation_fr %}
-{% else %}
-  {% assign nav_links = site.data.navigation_en %}
-{% endif %}
+{% comment %}Load correct language navigation data{% endcomment %}
+{% assign nav_links = site.data["navigation_" | append: current_lang] %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -18,24 +15,29 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist">
+            <a href="{{ base_path }}/">{{ site.title }}</a>
+          </li>
           
           {% for link in nav_links %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign domain = link.url contains 'http' ? '' : base_path %}
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
           {% endfor %}
 
           <!-- Language toggle -->
           <li class="masthead__menu-item persist">
-            <a href="{{ base_path }}/fr/">FR</a> | <a href="{{ base_path }}/en/">EN</a>
+            {% assign fr_active = current_lang == 'fr' %}
+            {% assign en_active = current_lang == 'en' %}
+            <a href="{{ base_path }}/fr/" {% if fr_active %}class="active"{% endif %}>FR</a> |
+            <a href="{{ base_path }}/en/" {% if en_active %}class="active"{% endif %}>EN</a>
           </li>
           
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+            <a role="button" aria-labelledby="theme-icon">
+              <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i>
+            </a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
