@@ -1,10 +1,10 @@
 ---
-permalink: /
+permalink: /fr
 title: "Dr. Olivier Legault"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - fr/about/
+  - fr/about.html
 ---
 
 # Dr. Olivier Legault  
