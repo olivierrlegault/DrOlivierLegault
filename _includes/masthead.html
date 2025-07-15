@@ -2,6 +2,14 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
+  <!-- Existing logo/title code -->
+  <div class="lang-switcher">
+    {% if site.lang == "en" or site.lang == nil %}
+      <a href="{{ site.baseurl }}/fr/" class="lang-option">FR</a>
+    {% elsif site.lang == "fr" %}
+      <a href="{{ site.baseurl }}/en/" class="lang-option">EN</a>
+    {% endif %}
+  </div>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
@@ -15,13 +23,7 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-<div class="lang-switcher">
-  {% if site.lang == "en" %}
-    <a href="{{ site.baseurl }}/fr/" class="active">FR</a>
-  {% elsif site.lang == "fr" %}
-    <a href="{{ site.baseurl }}/en/" class="active">EN</a>
-  {% endif %}
-</div>
+
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
