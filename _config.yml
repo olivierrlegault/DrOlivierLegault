@@ -11,9 +11,7 @@ locale                   : "en-US"
 languages                : ["en", "fr"]
 default_lang             : "en"
 site_theme               : "default"
-title:
-  en: "Dr Olivier Legault | Professional Page"
-  fr: "Dr Olivier Legault | Page Professionnelle"
+title                    : "Dr Olivier Legault"
 title_separator          : "-"
 name                     : &name "Olivier Legault"
 description              : &description "Developmental Pediatrician"
@@ -44,7 +42,7 @@ author:
   orcid            : "http://orcid.org/0009-0009-0665-9360"
   semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=olivier+legault"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Olivier-Legault"
   scopus           : # URL
 
   # Repositories and software development
