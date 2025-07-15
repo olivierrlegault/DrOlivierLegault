@@ -65,3 +65,28 @@
     font-weight: 700;
   }
 }
+
+.lang-switcher {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.5rem 0;
+  font-family: $sans-serif;
+
+  .lang-option {
+    color: $text-color;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // Highlight active language
+  a[href*="{{ site.lang }}"] {
+    opacity: 1;
+    border-bottom: 2px solid $primary-color;
+  }
+}
